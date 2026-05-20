@@ -1,0 +1,31 @@
+body{
+    background-image: url("/pictures/suke-x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    color: #e23077;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #33333357;
+}
+
+p{
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-color: green;
+}
