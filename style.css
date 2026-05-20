@@ -1,3 +1,9 @@
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body{
     background-image: url("/pictures/suke-x.jpg");
     background-size: cover;
@@ -5,16 +11,16 @@ body{
     background-attachment: fixed;
 }
 
-h1{
-    color: #e23077;
-    font-family: 'Arial', sans-serif;
+h2{
+    color: #333;
+    font-family: 'Anton', sans-serif;
     text-align: center;
-    background-color: #33333357;
+    font-size: 50px;
 }
 
 p{
     color: #333;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Anton', sans-serif;
     text-align: center;
     font-size: 18px;
 }
@@ -25,9 +31,19 @@ p{
     align-items: center;
     height: 21vh;
     color: rgb(0, 0, 0);
-    border-width: 2px;
+    /*border-width: 2px;
     border-style: solid;
-    border-color: green;
+    border-color: green;*/
+}
+
+.video-container {
+    width: 50%;
+    aspect-ratio: 16 / 9;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
 }
 
 .header {
@@ -40,3 +56,118 @@ p{
     display: flex;
     align-items: center;
 }
+
+.image-container {
+    position: relative;
+    margin-top: 300px;
+    margin-bottom: 50px;
+    width: 80%;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid white;
+}
+
+.image-container img {
+    width: auto;
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+    width: 90%;
+}
+
+.image-text-top {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+    width: 90%;
+}
+
+.image-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-paragraph {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.image-h2 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .image-paragraph {
+        font-size: 16px;
+        margin: 12px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-paragraph {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-paragraph {
+        font-size: 12px;
+        margin: 8px 0;
+    }
+    
+    .image-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .image-paragraph {
+        font-size: 10px;
+        margin: 5px 0;
+    }
+    
+    .image-container {
+        padding: 15px;
+    }
+}
+    
+    .image-content {
+        width: 90%;
+        height: 90%;
+    }
